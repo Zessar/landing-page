@@ -1,0 +1,52 @@
+@mixin body() {
+    background-color: $violet;
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 1440px;
+    margin: 0 auto;
+    color: white;
+    @media only screen and (max-width: $max-width){
+        background-image: url(../images/bg-mobile.svg);
+        background-position: top;
+        width: 375px;
+            .header__mobile {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin: 0 auto;
+                padding: 0 1em;
+                .header__mobile-icon {
+                    width: 40%;
+                    margin: 1em 0 2.4em 0;
+                }
+            }
+    }
+}
+
+@mixin part($flex, $position, $direction, $width, $margin, $padding) {
+    display: $flex;
+    justify-content: $position;
+    flex-direction: $direction;
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin botton () {
+    background-color: white;
+    padding: 0.5em 3.5em;
+    margin: 1.5em 0;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    color: $violet;
+    border-radius: 30px;
+    box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.16);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: $soft-magenta;
+        color: white;
+    }
+}
+

@@ -1,0 +1,58 @@
+@import url(../css/root.css);
+@import 'variables', 'mixins';
+body {
+    .header__mobile {
+        display: none;
+    }
+    font-family: 'Open Sans', sans-serif;
+    @include body();
+}
+.main {
+    display: flex;
+    justify-content: center;
+    .main__header {
+        .header__desktop-icon {
+            width: 25%;
+            margin: 1em 0 5em 0;
+        }
+        .header__desktop-img {
+            margin-bottom: 4em;
+        }
+        @include part(flex, center, column, 57%, 0 1em 0 5em, 1em 1em 0 2em);
+    }
+    .main__right {
+        text-align: left;
+        .main__h1 {
+            font-size: 2.4em;
+            font-weight: 600;
+            line-height: 1.4em;
+            margin-bottom: 2rem;
+        }
+        @include part(flex, center, column, 43%, 0, 0 6.5em 0 1em);
+    }
+    .main__button {
+        width: min-content;
+        @include botton()
+    }
+}
+@media screen and (max-width: $max-width) {
+    .main {
+        @include part(flex, flex-start, column, 375px, 0, 0);
+        .main__header {
+            display: none;
+        }
+        .main__right {
+            text-align: center;
+            align-items: center;
+            @include part(flex, center, column, 375px, 0, 0 2.2em);
+            .main__h1 {
+                margin-top: 3.2em;
+                font-size: 1.6em;
+            }
+            .main__button {
+                font-size: 0.8em;
+                padding: 0.8em 5em;
+            }
+        }
+    }
+}
