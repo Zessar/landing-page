@@ -7,11 +7,11 @@ Los usuarios deberían poder:
 
 ### Captura de pantalla
 
-![](capturas/Captura%20de%20pantalla%202023-09-19%20110327.png)
-![](capturas/Captura%20de%20pantalla%202023-09-19%20110334.png)
-![](capturas/Captura%20de%20pantalla%202023-09-19%20110341.png)
-![](capturas/Captura%20de%20pantalla%202023-09-19%20110355.png)
-![](capturas/Captura%20de%20pantalla%202023-09-19%20110404.png)
+![](capturas/Captura%20de%20pantalla%202023-10-13%20154913.png)
+![](capturas/Captura%20de%20pantalla%202023-10-13%20154920.png)
+![](capturas/Captura%20de%20pantalla%202023-10-13%20154930.png)
+![](capturas/Captura%20de%20pantalla%202023-10-13%20154936.png)
+
 
 
 ### Links
